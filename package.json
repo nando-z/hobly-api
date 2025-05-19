@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "API for hobly : Services for manage the relationships",
   "keywords": [
     "backend",
     "api",
@@ -15,11 +15,11 @@
   },
   "license": "ISC",
   "author": "Ahmed Khalid , Nand-z",
-  "type": "commonjs",
+  "type": "module",
   "main": "server/index.js",
   "scripts": {
-    "test": "bun test test/index.mjs",
-    "dev": "bun run --hot server/server.js"
+    "test": "bun test test/index.ts",
+    "dev": "bun run --hot server/server.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.8.2",
