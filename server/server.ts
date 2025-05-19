@@ -1,4 +1,4 @@
-const { app, PORT } = require("./index");
+import { app, PORT } from ".";
 
 app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`);

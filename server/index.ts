@@ -3,7 +3,8 @@ import helmet from "helmet";
 import cors from "cors";
 import express from "express";
 import morgan from "morgan";
-
+import { abort } from "./routes/abort";
+import { HomeRoute } from "@/test/HomeRouteTest";
 export const PORT = process.env.PORT;
 export const app = express();
 
@@ -21,14 +22,5 @@ app.use(
     xXssProtection: true,
   }),
 );
-
-app.get("/", (_req, res) => {
-  res.status(200).json({ message: "Hello" });
-});
-
-app.use((req, res) => {
-  res.status(404).json({
-    error: "Not Found",
-    message: "the request resourse not font",
-  });
-});
+app.get("/", HomeRoute);
+app.use(abort);
