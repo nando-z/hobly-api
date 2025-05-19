@@ -1,5 +1,5 @@
-import { app, PORT } from ".";
+import { PORT, server } from ".";
 
-app.listen(PORT, () => {
-  console.log(`http://localhost:${PORT}`);
+server.listen(PORT, () => {
+	console.log(`http://localhost:${PORT}`);
 });

@@ -5,9 +5,10 @@ import express from "express";
 import morgan from "morgan";
 import { abort } from "./routes/abort";
 import { HomeRoute } from "@/test/HomeRouteTest";
+import { createServer } from "node:http";
 export const PORT = process.env.PORT;
 export const app = express();
-
+export const server = createServer(app)
 dotenv.config();
 app.use(express.json({ limit: "10kb" }));
 app.use(express.urlencoded({ extended: false }));
