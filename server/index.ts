@@ -10,6 +10,7 @@ export const PORT = process.env.PORT;
 export const app = express();
 export const server = createServer(app)
 dotenv.config();
+app.use()
 app.use(express.json({ limit: "10kb" }));
 app.use(express.urlencoded({ extended: false }));
 app.use(morgan("dev"));
