@@ -1,0 +1,10 @@
+[build]
+outdir = "./dist"
+target = "node" # Ensures compatibility with Node.js
+format = "cjs"  # Build output as CommonJS
+
+[development]
+format = "esm"  # Use ESNext modules in development
+
+[alias]
+"@/" = "server/"
