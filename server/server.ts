@@ -17,7 +17,7 @@ createServer(app).listen(port, () => {
 });
 
 // Handle Rejections Promises
-const traggerUnhandledRejection = async () => {
+const triggerUnhandledRejection = async () => {
     try {
         throw new Error("Unhandled Rejection");
     } catch (error) {
@@ -26,6 +26,6 @@ const traggerUnhandledRejection = async () => {
 };
 
 process.on("unhandledRejection", (error: any): unknown => {
-    traggerUnhandledRejection();
+    triggerUnhandledRejection();
     process.exit(1);
 });
