@@ -1,4 +1,4 @@
-import { RequestHandler } from "../http";
+import { RequestHandler } from "@/types/http";
 
 export const abort: RequestHandler = (_req, res) => {
   res.status(404).json({
