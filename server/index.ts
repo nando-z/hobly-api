@@ -15,6 +15,7 @@ import rateLimit from "express-rate-limit";
 import { homeRoute } from "@/routes/home/home.route";
 import xss from "xss-clean";
 import ExpressMongoSanitize from "express-mongo-sanitize";
+import { UserRoute } from "./routes/user.route";
 
 // Load environment variables
 dotenv.config();
@@ -59,7 +60,7 @@ app.use(
 );
 
 // Routes
-app.use("/api/v1", homeRoute);
+app.use("/", UserRoute);
 app.use(abort);
 
 // Centralized error handling
