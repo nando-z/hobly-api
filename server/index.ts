@@ -4,7 +4,6 @@
  * to facilitate development and testing.
  * for production, use the production version of the server.
  */
-
 import dotenv from "dotenv";
 import helmet from "helmet";
 import cors from "cors";
