@@ -27,18 +27,15 @@ export const app = express();
 
 // Security middlewares
 app.use(ExpressMongoSanitize());
+
 app.use(cookieParser());
 app.use(express.json({ limit: "10kb" }));
 app.use(express.urlencoded({ extended: false }));
 app.use(morgan("dev")); // Use "dev" for development logging
 
 // Configure CORS for development
-const corsOptions = {
-    origin: process.env.CORS_ORIGIN || "http://localhost:3000", // Allow localhost for development
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-};
-app.use(cors(corsOptions));
+
+app.use(cors({ credentials: true, origin: true }));
 
 // Prevent XSS attacks
 app.use(xss());
