@@ -27,7 +27,7 @@
     "@types/cors": "^2.8.18",
     "@types/express": "^5.0.2",
     "@types/express-mongo-sanitize": "^2.1.0",
-    "@types/express-rate-limit": "^7.5.0",
+    "@types/express-rate-limit": "^6.0.2",
     "@types/express-validator": "^3.0.2",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/mongodb": "^4.0.7",
@@ -40,14 +40,15 @@
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-rate-limit": "^6.9.0",
+    "express-validator": "^7.0.0",
     "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.16.0",
     "mongoose": "^8.15.0",
     "morgan": "^1.10.0",
-    "express-mongo-sanitize": "^2.1.0",
-    "express-rate-limit": "^6.9.0",
-    "express-validator": "^7.0.0"
+    "xss-clean": "^0.1.4"
   },
   "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977"
 }
