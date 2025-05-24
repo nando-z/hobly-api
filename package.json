@@ -24,7 +24,8 @@
     "model:create": "bun run scripts/create-model.ts",
     "model:make-migration": "prisma migrate dev",
     "db:seed": "bun run scripts/seed.ts",
-    "db:reset": "prisma migrate reset --force"
+    "db:reset": "prisma migrate reset --force",
+    "commit": "bun run scripts/commit.ts"
   },
   "devDependencies": {
     "@types/bun": "^1.2.13",
