@@ -4,17 +4,17 @@ A robust backend API for Hobly - Services for managing relationships.
 
 ## Overview
 
-Hobly API is built with Express.js and TypeScript, providing a secure and scalable backend infrastructure for relationship management services. The API uses MongoDB for data storage and implements various security measures to ensure data integrity and protection.
+Hobly API is built with Express.js and TypeScript, providing a secure and scalable backend infrastructure for relationship management services. The API uses PostgreSQL with Prisma ORM for data storage and implements various security measures to ensure data integrity and protection.
 
 ## Features
 
 - **Express.js Framework**: Fast, unopinionated, minimalist web framework for Node.js
 - **TypeScript Support**: Strong typing for better code quality and developer experience
-- **MongoDB Integration**: Flexible document database for storing relationship data
+- **PostgreSQL with Prisma ORM**: Robust relational database with type-safe database access
 - **Security Measures**:
   - Helmet for securing HTTP headers
   - XSS protection
-  - MongoDB query sanitization
+  - Query sanitization
   - Rate limiting to prevent abuse
 - **Authentication**: JWT-based authentication system
 - **API Validation**: Request validation using express-validator
@@ -25,7 +25,8 @@ Hobly API is built with Express.js and TypeScript, providing a secure and scalab
 - **Runtime**: Node.js with Bun
 - **Framework**: Express.js
 - **Language**: TypeScript
-- **Database**: MongoDB
+- **Database**: PostgreSQL
+- **ORM**: Prisma
 - **Package Manager**: pnpm
 
 ## Getting Started
@@ -34,7 +35,7 @@ Hobly API is built with Express.js and TypeScript, providing a secure and scalab
 
 - Node.js (v18 or higher)
 - Bun runtime
-- MongoDB instance
+- PostgreSQL database
 
 ### Installation
 
@@ -52,7 +53,7 @@ Hobly API is built with Express.js and TypeScript, providing a secure and scalab
 3. Create a `.env` file in the root directory with the following variables:
    ```
    PORT=3000
-   DATABASE_URL=mongodb://localhost:27017/hobly
+   DATABASE_URL=postgresql://username:password@localhost:5432/hobly
    JWT_SECRET=your_jwt_secret
    NODE_ENV=development
    ```
