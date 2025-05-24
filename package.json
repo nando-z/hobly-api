@@ -9,10 +9,6 @@
     "node",
     "project"
   ],
-  "repository": {
-    "type": "git",
-    "url": "github.com/nando-z/hobly-api"
-  },
   "license": "ISC",
   "author": "Ahmed Khalid , Nand-z",
   "type": "module",

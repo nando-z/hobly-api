@@ -12,7 +12,6 @@ import morgan from "morgan";
 import { abort } from "./routes/abort";
 import cookieParser from "cookie-parser";
 import rateLimit from "express-rate-limit";
-import { homeRoute } from "@/routes/home/home.route";
 import xss from "xss-clean";
 import ExpressMongoSanitize from "express-mongo-sanitize";
 import { UserRoute } from "./routes/user.route";
